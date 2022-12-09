@@ -13,7 +13,7 @@ export default class GalleryAPIService {
       .then(response => response.json())
       .then(data => {
         this.page += 1;
-        return data.hits;
+        return data;
       });
   }
 
