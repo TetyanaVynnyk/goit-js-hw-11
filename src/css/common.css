@@ -1,16 +1,65 @@
+body {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 .search-form {
     display: flex;
     justify-content: center;
     padding: 8px;
     margin-bottom: 24px;
+
+}
+
+.input {
+    width: 50%;
+    height: 40px;
+    font-size: medium;
+    padding: 10px;
 }
 
 button {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(0, 174, 255);
 }
 
-button.is-hidden {
+.is-hidden {
     display: none;
+}
+
+button.load-more {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 120px;
+    min-height: 60px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-element {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }

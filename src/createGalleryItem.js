@@ -1,26 +1,26 @@
 const createGalleryItem = ({
-  webformatURL: webformatURL,
-  largeImageURL: largeImageURL,
-  tags: tags,
-  likes: likes,
-  views: views,
-  comments: comments,
-  downloads: downloads,
+  webformatURL,
+  largeImageURL,
+  tags,
+  likes,
+  views,
+  comments,
+  downloads,
 }) => {
   return `<div class="photo-card">
-    <img src="${webformatURL}" srcset="${largeImageURL}" alt="${tags}" loading="lazy" />
+    <img src="${webformatURL}" srcset="${largeImageURL}" alt="${tags}" loading="lazy" width = 400px height = 350px/>
     <div class="info">
       <p class="info-item">
-        <b>Likes <span>${likes}</span></b>
+        <b class = "info-element"><span>Likes</span><span>${likes}</span></b>
       </p>
       <p class="info-item">
-        <b>Views <span>${views}</span></b>
+        <b class = "info-element"><span>Views</span><span>${views}</span></b>
       </p>
       <p class="info-item">
-        <b>Comments <span>${comments}</span></b>
+        <b class = "info-element"><span>Comments</span><span>${comments}</span></b>
       </p>
       <p class="info-item">
-        <b>Downloads <span>${downloads}</span></b>
+        <b class = "info-element"><span>Downloads</span><span>${downloads}</span></b>
       </p>
     </div>
   </div>`;
